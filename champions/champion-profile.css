@@ -1,0 +1,452 @@
+/* Champion Profile Styles */
+:root {
+    --profile-red: #8B4513;
+    --profile-gold: #FFD700;
+    --profile-dark: #2C1810;
+    --profile-light: #DEB887;
+    --profile-accent: #FFA500;
+}
+
+.profile-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a0f0f, #2d1414);
+    color: #fff;
+    font-family: 'Comic Neue', cursive;
+}
+
+/* Navigation */
+.profile-nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 2px solid var(--profile-red);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    color: var(--profile-gold);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.back-link svg {
+    margin-right: 8px;
+}
+
+.site-title {
+    color: var(--profile-gold);
+    margin: 0;
+    font-size: 2em;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Champion Profile */
+.champion-profile {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 2px solid var(--profile-red);
+    text-align: center;
+}
+
+.champion-title {
+    margin-bottom: 20px;
+}
+
+.champion-name {
+    font-size: 3em;
+    color: var(--profile-gold);
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.champion-status {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.status-tag, .record-tag {
+    background: var(--profile-red);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 1.1em;
+}
+
+.champion-quote {
+    font-size: 1.5em;
+    color: var(--profile-light);
+    font-style: italic;
+}
+
+/* Profile Grid */
+.profile-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+}
+
+/* Sidebar */
+.profile-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.champion-portrait {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--profile-red);
+    text-align: center;
+}
+
+.portrait-frame {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 20px;
+    border: 5px solid var(--profile-gold);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.champion-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.champion-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.detail-label {
+    color: var(--profile-light);
+}
+
+.detail-value {
+    color: var(--profile-gold);
+    font-weight: bold;
+}
+
+/* Stats Card */
+.stats-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--profile-red);
+}
+
+.stats-card h2 {
+    color: var(--profile-gold);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stat-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stat-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: var(--profile-light);
+}
+
+.stat-value {
+    color: var(--profile-gold);
+    font-weight: bold;
+}
+
+.stat-bar {
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.stat-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--profile-red), var(--profile-accent));
+    border-radius: 5px;
+    transition: width 1s ease-out;
+}
+
+/* Profile Content */
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-section {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid var(--profile-red);
+}
+
+.profile-section h2 {
+    color: var(--profile-gold);
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.profile-text {
+    line-height: 1.6;
+    color: var(--profile-light);
+}
+
+/* Victory Timeline */
+.victory-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid var(--profile-gold);
+}
+
+.timeline-date {
+    color: var(--profile-gold);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+    color: var(--profile-light);
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    color: var(--profile-light);
+    margin-bottom: 15px;
+}
+
+.match-stats {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: var(--profile-red);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+/* Footer */
+.profile-footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 2px solid var(--profile-red);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* General Layout */
+    .champion-profile {
+        padding: 10px;
+    }
+
+    /* Navigation */
+    .profile-nav {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .site-title {
+        font-size: 1.5em;
+    }
+
+    /* Profile Header */
+    .profile-header {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .champion-name {
+        font-size: 2em;
+    }
+
+    .champion-quote {
+        font-size: 1.2em;
+    }
+
+    /* Profile Grid */
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Champion Portrait */
+    .champion-portrait {
+        padding: 15px;
+    }
+
+    .portrait-frame {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Stats Card */
+    .stats-card {
+        padding: 15px;
+    }
+
+    .stats-card h2 {
+        font-size: 1.5em;
+    }
+
+    /* Profile Content */
+    .profile-section {
+        padding: 20px;
+    }
+
+    .profile-section h2 {
+        font-size: 1.5em;
+    }
+
+    /* Timeline */
+    .timeline-item {
+        padding: 15px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.2em;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .champion-name {
+        font-size: 1.8em;
+    }
+
+    .champion-quote {
+        font-size: 1.1em;
+    }
+
+    .portrait-frame {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-section h2 {
+        font-size: 1.3em;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.1em;
+    }
+}
+
+/* Landscape Mode */
+@media (max-height: 500px) and (orientation: landscape) {
+    .profile-grid {
+        grid-template-columns: 250px 1fr;
+    }
+
+    .portrait-frame {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* High-DPI Screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .champion-image {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) {
+    .back-link:hover,
+    .stat:hover {
+        transform: none;
+    }
+}
+
+/* Prevent Text Selection During Animations */
+.champion-portrait,
+.stats-card,
+.profile-section {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Optimize Animations for Mobile */
+@media (prefers-reduced-motion: reduce) {
+    .stat-fill {
+        transition: none;
+    }
+}
+
+/* Add safe area insets for modern mobile devices */
+@supports (padding: max(0px)) {
+    .champion-profile {
+        padding-left: max(10px, env(safe-area-inset-left));
+        padding-right: max(10px, env(safe-area-inset-right));
+        padding-bottom: max(10px, env(safe-area-inset-bottom));
+    }
+} 
