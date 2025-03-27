@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#8B4513">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Pecking Order - The Ultimate Cockfighting Experience">
+    <title>Pecking Order - The Ultimate Cockfighting Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <div class="barnyard-container">
+        <header class="barn-header">
+            <div class="header-content">
+                <h1>Pecking Order</h1>
+                <div class="rooster-animation" role="img" aria-label="Rooster">🐓</div>
+                <p class="tagline">Where Champions Rise and Feathers Fly!</p>
+            </div>
+            <div class="barn-decoration" aria-hidden="true">
+                <span>🌾</span>
+                <span>🌾</span>
+                <span>🌾</span>
+            </div>
+        </header>
+
+        <nav class="barn-nav" role="navigation" aria-label="Main navigation">
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+            <ul class="nav-list">
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="#fighters">Fighters</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="ring.html" class="ring-link">Enter The Ring</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <h2>Welcome to the Barnyard Battle!</h2>
+                    <p>Get ready for the most exciting cockfighting experience in the coop!</p>
+                    <div class="hero-cta">
+                        <a href="ring.html" class="blood-button" role="button" aria-label="Enter the blood pit">
+                            <span class="button-text">ENTER THE BLOOD PIT</span>
+                            <span class="button-icon" aria-hidden="true">🔥</span>
+                        </a>
+                        <p class="cta-subtext">Choose your champion and fight for glory!</p>
+                    </div>
+                </div>
+                <div class="floating-chickens" aria-hidden="true">
+                    <span>🐔</span>
+                    <span>🐔</span>
+                    <span>🐔</span>
+                </div>
+                <div class="barn-elements" aria-hidden="true">
+                    <span class="hay">🌾</span>
+                    <span class="hay">🌾</span>
+                    <span class="hay">🌾</span>
+                </div>
+            </section>
+
+            <section id="fighters" class="fighters-section" aria-labelledby="fighters-title">
+                <h2 id="fighters-title">Meet Our Champions</h2>
+                <div class="fighters-grid">
+                    <a href="champions/cockodile.html" class="fighter-card">
+                        <div class="fighter-image">
+                            <img src="champsimg/cockdundee.png" alt="Cockodile Dundee">
+                        </div>
+                        <h3>Cockodile Dundee</h3>
+                        <p class="fighter-quote">"I'll make you my prey, mate!"</p>
+                        <div class="fighter-stats">
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 95%"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 90%"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="champions/pluck-norris.html" class="fighter-card">
+                        <div class="fighter-image">
+                            <img src="champsimg/plucknorris.png" alt="Pluck Norris">
+                        </div>
+                        <h3>Pluck Norris</h3>
+                        <p class="fighter-quote">"When Pluck Norris enters the ring, the other cocks just lay down and take it."</p>
+                        <div class="fighter-stats">
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 100%"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 100%"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="champions/pecker-wrecker.html" class="fighter-card">
+                        <div class="fighter-image">
+                            <img src="champsimg/peckerwrecker.png" alt="Pecker Wrecker">
+                        </div>
+                        <h3>Pecker Wrecker</h3>
+                        <p class="fighter-quote">"This cock doesn't just wreck—it destroys lives."</p>
+                        <div class="fighter-stats">
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 98%"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 85%"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="champions/feather-fucker.html" class="fighter-card">
+                        <div class="fighter-image">
+                            <img src="champsimg/featherfucker.png" alt="Feather Fucker">
+                        </div>
+                        <h3>Feather Fucker</h3>
+                        <p class="fighter-quote">"Feathers will be ruffled. Dignity will be lost."</p>
+                        <div class="fighter-stats">
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 92%"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 95%"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="champions/deep-clucker.html" class="fighter-card">
+                        <div class="fighter-image">
+                            <img src="champsimg/deepclucker.png" alt="Deep Clucker">
+                        </div>
+                        <h3>Deep Clucker</h3>
+                        <p class="fighter-quote">"If you thought you had limits, he'll find out just how deep they go."</p>
+                        <div class="fighter-stats">
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 90%"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 88%"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="champions/throbbin-gobbler.html" class="fighter-card">
+                        <div class="fighter-image">
+                            <img src="champsimg/throbbingobbler.png" alt="The Throbbin' Gobbler">
+                        </div>
+                        <h3>The Throbbin' Gobbler</h3>
+                        <p class="fighter-quote">"The only bird with a gag reflex stronger than his beak."</p>
+                        <div class="fighter-stats">
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 95%"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 100%"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="leaderboard" class="leaderboard-section" aria-labelledby="leaderboard-title">
+                <h2 id="leaderboard-title">Top Peckers</h2>
+                <div class="leaderboard-container">
+                    <div class="leaderboard-item">
+                        <span class="rank">1</span>
+                        <span class="name">Pluck Norris</span>
+                        <span class="wins">15-0</span>
+                    </div>
+                    <div class="leaderboard-item">
+                        <span class="rank">2</span>
+                        <span class="name">Pecker Wrecker</span>
+                        <span class="wins">14-1</span>
+                    </div>
+                    <div class="leaderboard-item">
+                        <span class="rank">3</span>
+                        <span class="name">Cockodile Dundee</span>
+                        <span class="wins">13-2</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="barn-footer" role="contentinfo">
+            <p>© 2024 Pecking Order - All Rights Reserved</p>
+            <div class="footer-chickens" aria-hidden="true">
+                <span>🐔</span>
+                <span>🐔</span>
+                <span>🐔</span>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

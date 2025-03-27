@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ring | Pecking Order</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ring.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body class="ring-page">
+    <div class="ring-container">
+        <nav class="ring-nav">
+            <div class="nav-content">
+                <a href="index.html" class="back-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Back to Safety
+                </a>
+                <h1 class="site-title">The Blood Pit</h1>
+            </div>
+        </nav>
+
+        <main class="ring-main">
+            <div class="arena-section">
+                <div class="arena-container">
+                    <div class="blood-overlay"></div>
+                    <div class="ring-circle">
+                        <div class="ring-ropes"></div>
+                        <div class="fighting-area">
+                            <div class="fighter fighter-left">
+                                <img src="" alt="Fighter 1" class="fighter-sprite">
+                                <div class="health-bar">
+                                    <div class="health-fill"></div>
+                                </div>
+                            </div>
+                            <div class="fighter fighter-right">
+                                <img src="" alt="Fighter 2" class="fighter-sprite">
+                                <div class="health-bar">
+                                    <div class="health-fill"></div>
+                                </div>
+                            </div>
+                            <div class="fight-effects">
+                                <div class="blood-splatter"></div>
+                                <div class="feathers"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crowd-items">
+                        <button class="throw-item" data-item="money">💰 Throw Money</button>
+                        <button class="throw-item" data-item="tomato">🍅 Throw Tomato</button>
+                        <button class="throw-item" data-item="corn">🌽 Throw Corn</button>
+                    </div>
+                </div>
+                <div class="fight-controls">
+                    <button class="start-fight" disabled>START THE BLOODBATH</button>
+                    <div class="fight-timer">30</div>
+                </div>
+            </div>
+
+            <div class="fighter-selection">
+                <h2>Choose Your Fighters</h2>
+                <div class="fighters-grid">
+                    <div class="fighter-card" data-fighter="cockodile">
+                        <img src="champsimg/cockdundee.png" alt="Cockodile Dundee">
+                        <h3>Cockodile Dundee</h3>
+                        <div class="stats">
+                            <div class="stat">STR: 95%</div>
+                            <div class="stat">SPD: 90%</div>
+                        </div>
+                    </div>
+                    <div class="fighter-card" data-fighter="pluck-norris">
+                        <img src="champsimg/plucknorris.png" alt="Pluck Norris">
+                        <h3>Pluck Norris</h3>
+                        <div class="stats">
+                            <div class="stat">STR: 100%</div>
+                            <div class="stat">SPD: 100%</div>
+                        </div>
+                    </div>
+                    <div class="fighter-card" data-fighter="pecker-wrecker">
+                        <img src="champsimg/peckerwrecker.png" alt="Pecker Wrecker">
+                        <h3>Pecker Wrecker</h3>
+                        <div class="stats">
+                            <div class="stat">STR: 98%</div>
+                            <div class="stat">SPD: 85%</div>
+                        </div>
+                    </div>
+                    <div class="fighter-card" data-fighter="feather-fucker">
+                        <img src="champsimg/featherfucker.png" alt="Feather Fucker">
+                        <h3>Feather Fucker</h3>
+                        <div class="stats">
+                            <div class="stat">STR: 92%</div>
+                            <div class="stat">SPD: 95%</div>
+                        </div>
+                    </div>
+                    <div class="fighter-card" data-fighter="deep-clucker">
+                        <img src="champsimg/deepclucker.png" alt="Deep Clucker">
+                        <h3>Deep Clucker</h3>
+                        <div class="stats">
+                            <div class="stat">STR: 90%</div>
+                            <div class="stat">SPD: 88%</div>
+                        </div>
+                    </div>
+                    <div class="fighter-card" data-fighter="throbbin-gobbler">
+                        <img src="champsimg/throbbingobbler.png" alt="The Throbbin' Gobbler">
+                        <h3>The Throbbin' Gobbler</h3>
+                        <div class="stats">
+                            <div class="stat">STR: 95%</div>
+                            <div class="stat">SPD: 92%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="ring.js"></script>
+</body>
+</html> 

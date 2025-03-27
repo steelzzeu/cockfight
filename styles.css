@@ -1,0 +1,860 @@
+:root {
+    --barn-red: #8B4513;
+    --hay-yellow: #FFD700;
+    --grass-green: #228B22;
+    --wood-brown: #DEB887;
+    --sky-blue: #87CEEB;
+    --accent-orange: #FFA500;
+    --text-dark: #2C1810;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background: linear-gradient(135deg, var(--sky-blue), var(--grass-green));
+    min-height: 100vh;
+    color: var(--text-dark);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.barnyard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.barn-header {
+    background: var(--barn-red);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border: 5px solid var(--wood-brown);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.barn-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.3;
+}
+
+.barn-decoration span {
+    font-size: 2rem;
+    animation: sway 3s infinite ease-in-out;
+}
+
+.barn-decoration span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.barn-decoration span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.barn-header h1 {
+    color: var(--hay-yellow);
+    font-size: 4rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    font-family: 'Righteous', cursive;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: var(--hay-yellow);
+    font-size: 1.5rem;
+    font-family: 'Righteous', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.rooster-animation {
+    font-size: 5rem;
+    animation: bounce 2s infinite;
+    text-shadow: 0 0 10px var(--accent-orange);
+}
+
+/* Navigation */
+.barn-nav {
+    background: var(--wood-brown);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 3px solid var(--barn-red);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.barn-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.barn-nav a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.barn-nav a:hover {
+    background: var(--accent-orange);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid var(--barn-red);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h2 {
+    color: var(--barn-red);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Righteous', cursive;
+}
+
+.cta-button {
+    background: var(--accent-orange);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    background: var(--barn-red);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Chickens Animation */
+.floating-chickens span {
+    position: absolute;
+    font-size: 2rem;
+    animation: float 6s infinite;
+}
+
+.floating-chickens span:nth-child(1) { left: 10%; animation-delay: 0s; }
+.floating-chickens span:nth-child(2) { left: 50%; animation-delay: 2s; }
+.floating-chickens span:nth-child(3) { left: 80%; animation-delay: 4s; }
+
+.barn-elements {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    opacity: 0.5;
+}
+
+.barn-elements .hay {
+    font-size: 2rem;
+    animation: sway 3s infinite ease-in-out;
+}
+
+/* Fighters Section */
+.fighters-section {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    border: 3px solid var(--barn-red);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fighters-section h2 {
+    text-align: center;
+    color: var(--barn-red);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Righteous', cursive;
+}
+
+.fighters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fighter-card {
+    background: var(--wood-brown);
+    border: 3px solid var(--barn-red);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.fighter-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fighter-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.fighter-card:hover::before {
+    transform: translateX(100%);
+}
+
+.fighter-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--barn-red);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fighter-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.fighter-card:hover .fighter-image img {
+    transform: scale(1.1);
+}
+
+.fighter-card h3 {
+    color: var(--barn-red);
+    margin: 15px 0;
+    font-size: 1.8rem;
+    font-family: 'Righteous', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fighter-quote {
+    font-style: italic;
+    color: var(--text-dark);
+    margin: 15px 0;
+    font-size: 1rem;
+    min-height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4;
+}
+
+.fighter-stats {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.stat-bar {
+    background: rgba(0, 0, 0, 0.2);
+    height: 10px;
+    border-radius: 5px;
+    margin: 8px 0;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-fill {
+    background: linear-gradient(90deg, var(--barn-red), var(--accent-orange));
+    height: 100%;
+    transition: width 1s ease;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+}
+
+/* Leaderboard Section */
+.leaderboard-section {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    border: 3px solid var(--barn-red);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-section h2 {
+    text-align: center;
+    color: var(--barn-red);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Righteous', cursive;
+}
+
+.leaderboard-container {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.leaderboard-item {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--barn-red);
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.rank {
+    font-weight: bold;
+    color: var(--barn-red);
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.barn-footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--barn-red);
+    border-radius: 15px;
+    color: var(--hay-yellow);
+    border: 3px solid var(--wood-brown);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer-chickens {
+    margin-top: 15px;
+}
+
+.footer-chickens span {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    animation: bounce 1s infinite;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-50px) rotate(10deg); }
+}
+
+@keyframes peck {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(-20deg); }
+}
+
+@keyframes sway {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(5deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .barn-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .barn-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .fighters-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .fighter-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .fighter-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .fighter-quote {
+        font-size: 0.9rem;
+    }
+}
+
+.fighter-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.ring-link {
+    background: #ff4444;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.ring-link:hover {
+    background: #ff6666;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+/* Hero CTA */
+.hero-cta {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.blood-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 40px;
+    background: linear-gradient(45deg, #ff0000, #8B0000);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family: 'Righteous', cursive;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    border: 3px solid #ff6666;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3),
+                inset 0 0 10px rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.blood-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.blood-button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 5px 30px rgba(255, 0, 0, 0.5),
+                inset 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.blood-button:hover::before {
+    left: 100%;
+}
+
+.button-text {
+    position: relative;
+    z-index: 1;
+}
+
+.button-icon {
+    font-size: 1.8rem;
+    animation: pulse 2s infinite;
+}
+
+.cta-subtext {
+    color: var(--barn-red);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive adjustments for the blood button */
+@media (max-width: 768px) {
+    .blood-button {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+
+    .button-icon {
+        font-size: 1.4rem;
+    }
+
+    .cta-subtext {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* General Layout */
+    .barnyard-container {
+        padding: 10px;
+    }
+
+    /* Header */
+    .barn-header {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .barn-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    .rooster-animation {
+        font-size: 3rem;
+    }
+
+    /* Navigation */
+    .barn-nav {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .barn-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .barn-nav a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 30px 15px;
+        margin-bottom: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    /* Fighters Section */
+    .fighters-section {
+        padding: 20px 15px;
+        margin-bottom: 30px;
+    }
+
+    .fighters-section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .fighters-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .fighter-card {
+        padding: 15px;
+    }
+
+    .fighter-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .fighter-card h3 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    .fighter-quote {
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+
+    /* Leaderboard Section */
+    .leaderboard-section {
+        padding: 20px 15px;
+        margin-bottom: 30px;
+    }
+
+    .leaderboard-section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .leaderboard-item {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .barn-footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .footer-chickens span {
+        font-size: 1.5rem;
+    }
+
+    /* Floating Elements */
+    .floating-chickens span {
+        font-size: 1.5rem;
+    }
+
+    .barn-elements .hay {
+        font-size: 1.5rem;
+    }
+
+    /* CTA Button */
+    .blood-button {
+        padding: 12px 24px;
+        font-size: 1.1rem;
+    }
+
+    .button-icon {
+        font-size: 1.2rem;
+        margin-left: 8px;
+    }
+
+    .cta-subtext {
+        font-size: 0.9rem;
+        margin-top: 8px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .barn-header h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .rooster-animation {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .fighters-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fighter-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .fighter-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .fighter-quote {
+        font-size: 0.8rem;
+    }
+
+    .leaderboard-item {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape Mode */
+@media (max-height: 500px) and (orientation: landscape) {
+    .barn-header {
+        padding: 15px;
+    }
+
+    .barn-header h1 {
+        font-size: 2rem;
+    }
+
+    .barn-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .fighters-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .hero-section {
+        padding: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* High-DPI Screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .fighter-image img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) {
+    .fighter-card:hover {
+        transform: none;
+    }
+
+    .barn-nav a:hover {
+        transform: none;
+    }
+
+    .blood-button:hover {
+        transform: none;
+    }
+}
+
+/* Prevent Text Selection During Animations */
+.fighter-card, .barn-nav a, .blood-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Optimize Animations for Mobile */
+@media (prefers-reduced-motion: reduce) {
+    .rooster-animation,
+    .floating-chickens span,
+    .barn-elements .hay,
+    .fighter-card,
+    .barn-nav a,
+    .blood-button {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Add viewport height units for better mobile support */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 80vh;
+    }
+
+    .fighters-section {
+        min-height: auto;
+    }
+}
+
+/* Improve touch targets */
+@media (hover: none) {
+    .barn-nav a,
+    .blood-button,
+    .fighter-card {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+/* Add safe area insets for modern mobile devices */
+@supports (padding: max(0px)) {
+    .barnyard-container {
+        padding-left: max(20px, env(safe-area-inset-left));
+        padding-right: max(20px, env(safe-area-inset-right));
+        padding-bottom: max(20px, env(safe-area-inset-bottom));
+    }
+} 
